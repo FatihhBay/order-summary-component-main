@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(images/pattern-background-desktop.svg);
+    font-family: 'Red Hat Display', sans-serif;
+    height:100vh;
+    width:100vw;
+    display:grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.container{
+    width:40%;
+    height:90%;
+    background-color: white;
+    display:grid;
+
+    align-items: center;
+    justify-content: center;
+    border-radius: 1em 1em 1em 1em ;
+    overflow:hidden;
+    box-shadow: 0 3px 30px #a9c8ec;
+
+}
+.illustrate{
+    width:100%;
+    height:100%;
+    border-radius: 1em 1em 0 0 ;
+}
+
+h1{
+    font-weight: 700;
+    text-align: center;
+    margin-top:1em;
+}
+
+.item-1{
+
+text-align: center;
+color:hsl(224, 23%, 55%);
+font-size: 1em;
+padding:0 0.5em;
+}
+
+.item-2{
+    display:grid;
+    grid-template-columns:repeat(4,auto) ;
+    background-color:hsl(225, 100%, 98%) ;
+    margin:0 2em;
+    padding:1em;
+    border-radius: 0.5em;
+    align-content: center;
+    position:relative;
+}
+
+.item-2 a{
+    display:block;
+    right:0;
+    top:50%;
+    transform: translate(-50%,-50%);
+    position:absolute;
+}
+
+.item-3{
+    grid-template-rows: repeat(2,auto);
+}
+
+.item-4{
+    font-weight: 900;
+}
+
+.item-5{
+    color:rgb(138, 138, 138);
+}
+
+.item-6{
+    color: hsl(245, 75%, 52%);
+
+}
+
+.item-7{
+    text-align: center;
+    background-color: hsl(245, 75%, 52%);
+    margin:0.5em 2em;
+    border-radius: 0.3em;
+    padding:0.8em;
+    color:white; 
+    font-size: 0.8em;
+    box-shadow: 0 10px 20px  rgba(20, 3, 250, 0.25);
+}
+
+.item-8{
+    text-align: center;
+    color:rgb(109, 108, 108);
+    margin-bottom: 1.5em;
+}
+
+@media (max-width:375px){
+    .container{
+        width:60%;
+        height:90%;
+    }
+    .item-2{
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 0.8em;
+        padding:0.2em;
+        margin-top:0.5 0 !important;
+        align-content: center;
+        justify-items: center;
+    }
+
+    .item-2 a{
+        /* display:block; */
+        /* right:0;
+        bottom:0;
+        transform: translate(-50%,-50%); */
+        /* position:absolute; */
+    }
+
+    h1{
+        margin-top: 0.4em;
+        font-size: 1em;
+    }
+
+    .inner{
+        display:grid;
+        padding:0.5em;
+        overflow: hidden;
+        row-gap:0.5em;
+    }
+
+    .item-8{
+        margin-bottom:0.2em;
+    }
+
+    .item-1{
+        font-size: 0.8em;
+        margin-bottom:0.5em;
+    }
+}
+
+
+
